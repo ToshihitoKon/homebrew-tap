@@ -5,21 +5,21 @@
 class CcDashboard < Formula
   desc "実行中の Claude Code セッション一覧を表示する TUI"
   homepage "https://github.com/ToshihitoKon/cc-dashboard-tui"
-  version "1.0.0-alpha.5"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.0.0-alpha.5/cc-dashboard_1.0.0-alpha.5_darwin_amd64.tar.gz"
-      sha256 "702830ad8065800ebc77a8b5d5af180921ba549bf2ae3edce265e1374dedd0a8"
+      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.1.0/cc-dashboard_1.1.0_darwin_amd64.tar.gz"
+      sha256 "7b48baeebd295ba60b182b000a440638c9e03c3d39150b82d28c22939c72db5a"
 
       define_method(:install) do
         bin.install "cc-dashboard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.0.0-alpha.5/cc-dashboard_1.0.0-alpha.5_darwin_arm64.tar.gz"
-      sha256 "b10e36a5c97b384ee7869c228d57d47d6919124fe62d25ed8d13c4fc4582b73b"
+      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.1.0/cc-dashboard_1.1.0_darwin_arm64.tar.gz"
+      sha256 "4cc015d3c3cfd5f9ee857fc27ab4faebbc2e0368b4490d4d8f05641e3dddb04e"
 
       define_method(:install) do
         bin.install "cc-dashboard"
@@ -29,15 +29,15 @@ class CcDashboard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.0.0-alpha.5/cc-dashboard_1.0.0-alpha.5_linux_amd64.tar.gz"
-      sha256 "a206231b5cb0f88ee5928d358ecfef8ee331ab3cd083e796df33776eeb148c7a"
+      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.1.0/cc-dashboard_1.1.0_linux_amd64.tar.gz"
+      sha256 "9038a1e5567863203e92f803af0a510366eed7a4bec4b8aa39fe3f5dc60386ee"
       define_method(:install) do
         bin.install "cc-dashboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.0.0-alpha.5/cc-dashboard_1.0.0-alpha.5_linux_arm64.tar.gz"
-      sha256 "5dce9ccaa20c7a3a82fb305622915f27b70892e1399d2da7ae119778c9cd47bf"
+      url "https://github.com/ToshihitoKon/cc-dashboard-tui/releases/download/v1.1.0/cc-dashboard_1.1.0_linux_arm64.tar.gz"
+      sha256 "211a77d8d3a66190ec02d61656e603fdbbcc44c571339bc5b1b3b449b38d2ade"
       define_method(:install) do
         bin.install "cc-dashboard"
       end
